@@ -12,7 +12,18 @@
 		111C377B1D15D020005EB0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C37791D15D020005EB0DA /* Main.storyboard */; };
 		111C377D1D15D020005EB0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111C377C1D15D020005EB0DA /* Assets.xcassets */; };
 		111C37801D15D020005EB0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C377E1D15D020005EB0DA /* LaunchScreen.storyboard */; };
+		11BA9A9A1D15DE1A0006E337 /* GridyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9A991D15DE1A0006E337 /* GridyTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11BA9A9C1D15DE1A0006E337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111C376A1D15D020005EB0DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 111C37711D15D020005EB0DA;
+			remoteInfo = Gridy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		111C37721D15D020005EB0DA /* Gridy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gridy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		111C377C1D15D020005EB0DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111C377F1D15D020005EB0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111C37811D15D020005EB0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BA9A971D15DE1A0006E337 /* GridyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BA9A991D15DE1A0006E337 /* GridyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridyTests.swift; sourceTree = "<group>"; };
+		11BA9A9B1D15DE1A0006E337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		111C376F1D15D020005EB0DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BA9A941D15DE1A0006E337 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				111C37741D15D020005EB0DA /* Gridy */,
+				11BA9A981D15DE1A0006E337 /* GridyTests */,
 				111C37731D15D020005EB0DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				111C37721D15D020005EB0DA /* Gridy.app */,
+				11BA9A971D15DE1A0006E337 /* GridyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				111C37811D15D020005EB0DA /* Info.plist */,
 			);
 			path = Gridy;
+			sourceTree = "<group>";
+		};
+		11BA9A981D15DE1A0006E337 /* GridyTests */ = {
+			isa = PBXGroup;
+			children = (
+				11BA9A991D15DE1A0006E337 /* GridyTests.swift */,
+				11BA9A9B1D15DE1A0006E337 /* Info.plist */,
+			);
+			path = GridyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 111C37721D15D020005EB0DA /* Gridy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		11BA9A961D15DE1A0006E337 /* GridyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BA9AA01D15DE1A0006E337 /* Build configuration list for PBXNativeTarget "GridyTests" */;
+			buildPhases = (
+				11BA9A931D15DE1A0006E337 /* Sources */,
+				11BA9A941D15DE1A0006E337 /* Frameworks */,
+				11BA9A951D15DE1A0006E337 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11BA9A9D1D15DE1A0006E337 /* PBXTargetDependency */,
+			);
+			name = GridyTests;
+			productName = GridyTests;
+			productReference = 11BA9A971D15DE1A0006E337 /* GridyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					111C37711D15D020005EB0DA = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					11BA9A961D15DE1A0006E337 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 111C37711D15D020005EB0DA;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				111C37711D15D020005EB0DA /* Gridy */,
+				11BA9A961D15DE1A0006E337 /* GridyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11BA9A951D15DE1A0006E337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11BA9A931D15DE1A0006E337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BA9A9A1D15DE1A0006E337 /* GridyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11BA9A9D1D15DE1A0006E337 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 111C37711D15D020005EB0DA /* Gridy */;
+			targetProxy = 11BA9A9C1D15DE1A0006E337 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		111C37791D15D020005EB0DA /* Main.storyboard */ = {
@@ -269,6 +347,30 @@
 			};
 			name = Release;
 		};
+		11BA9A9E1D15DE1A0006E337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GridyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.doloz.GridyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gridy.app/Gridy";
+			};
+			name = Debug;
+		};
+		11BA9A9F1D15DE1A0006E337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GridyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.doloz.GridyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gridy.app/Gridy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +388,15 @@
 			buildConfigurations = (
 				111C37851D15D020005EB0DA /* Debug */,
 				111C37861D15D020005EB0DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BA9AA01D15DE1A0006E337 /* Build configuration list for PBXNativeTarget "GridyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BA9A9E1D15DE1A0006E337 /* Debug */,
+				11BA9A9F1D15DE1A0006E337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
