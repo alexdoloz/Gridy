@@ -13,6 +13,7 @@
 		111C377D1D15D020005EB0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111C377C1D15D020005EB0DA /* Assets.xcassets */; };
 		111C37801D15D020005EB0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C377E1D15D020005EB0DA /* LaunchScreen.storyboard */; };
 		11BA9A9A1D15DE1A0006E337 /* GridyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9A991D15DE1A0006E337 /* GridyTests.swift */; };
+		11BA9AA31D15DEBC0006E337 /* Grid4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9AA21D15DEBC0006E337 /* Grid4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		11BA9A971D15DE1A0006E337 /* GridyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BA9A991D15DE1A0006E337 /* GridyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridyTests.swift; sourceTree = "<group>"; };
 		11BA9A9B1D15DE1A0006E337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BA9AA21D15DEBC0006E337 /* Grid4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		111C37741D15D020005EB0DA /* Gridy */ = {
 			isa = PBXGroup;
 			children = (
+				11BA9AA11D15DE950006E337 /* Source */,
 				111C37751D15D020005EB0DA /* AppDelegate.swift */,
 				111C37771D15D020005EB0DA /* ViewController.swift */,
 				111C37791D15D020005EB0DA /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				11BA9A9B1D15DE1A0006E337 /* Info.plist */,
 			);
 			path = GridyTests;
+			sourceTree = "<group>";
+		};
+		11BA9AA11D15DE950006E337 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				11BA9AA21D15DEBC0006E337 /* Grid4.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BA9AA31D15DEBC0006E337 /* Grid4.swift in Sources */,
 				111C37781D15D020005EB0DA /* ViewController.swift in Sources */,
 				111C37761D15D020005EB0DA /* AppDelegate.swift in Sources */,
 			);
