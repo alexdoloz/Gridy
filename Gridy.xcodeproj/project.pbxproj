@@ -12,8 +12,10 @@
 		111C377B1D15D020005EB0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C37791D15D020005EB0DA /* Main.storyboard */; };
 		111C377D1D15D020005EB0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111C377C1D15D020005EB0DA /* Assets.xcassets */; };
 		111C37801D15D020005EB0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111C377E1D15D020005EB0DA /* LaunchScreen.storyboard */; };
-		11BA9A9A1D15DE1A0006E337 /* GridyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9A991D15DE1A0006E337 /* GridyTests.swift */; };
+		11BA9A9A1D15DE1A0006E337 /* Grid4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9A991D15DE1A0006E337 /* Grid4Tests.swift */; };
 		11BA9AA31D15DEBC0006E337 /* Grid4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9AA21D15DEBC0006E337 /* Grid4.swift */; };
+		11BA9AA51D1738CF0006E337 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9AA41D1738CE0006E337 /* Cell.swift */; };
+		11BA9AA71D1739830006E337 /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BA9AA61D1739830006E337 /* CellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,11 @@
 		111C377F1D15D020005EB0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111C37811D15D020005EB0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BA9A971D15DE1A0006E337 /* GridyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11BA9A991D15DE1A0006E337 /* GridyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridyTests.swift; sourceTree = "<group>"; };
+		11BA9A991D15DE1A0006E337 /* Grid4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid4Tests.swift; sourceTree = "<group>"; };
 		11BA9A9B1D15DE1A0006E337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BA9AA21D15DEBC0006E337 /* Grid4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid4.swift; sourceTree = "<group>"; };
+		11BA9AA41D1738CE0006E337 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		11BA9AA61D1739830006E337 /* CellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,8 @@
 		11BA9A981D15DE1A0006E337 /* GridyTests */ = {
 			isa = PBXGroup;
 			children = (
-				11BA9A991D15DE1A0006E337 /* GridyTests.swift */,
+				11BA9A991D15DE1A0006E337 /* Grid4Tests.swift */,
+				11BA9AA61D1739830006E337 /* CellTests.swift */,
 				11BA9A9B1D15DE1A0006E337 /* Info.plist */,
 			);
 			path = GridyTests;
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				11BA9AA21D15DEBC0006E337 /* Grid4.swift */,
+				11BA9AA41D1738CE0006E337 /* Cell.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BA9AA31D15DEBC0006E337 /* Grid4.swift in Sources */,
+				11BA9AA51D1738CF0006E337 /* Cell.swift in Sources */,
 				111C37781D15D020005EB0DA /* ViewController.swift in Sources */,
 				111C37761D15D020005EB0DA /* AppDelegate.swift in Sources */,
 			);
@@ -218,7 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BA9A9A1D15DE1A0006E337 /* GridyTests.swift in Sources */,
+				11BA9A9A1D15DE1A0006E337 /* Grid4Tests.swift in Sources */,
+				11BA9AA71D1739830006E337 /* CellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

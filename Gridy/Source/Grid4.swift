@@ -27,6 +27,14 @@ public struct Grid4 {
     /// Vertical space between cells. By default there is no space (0.0).
     public var spaceY: CGFloat = 0.0
     
+    /// Point to which `anchorCell` is anchored. See also `anchorMode`.
+    public var anchorPoint: CGPoint = CGPointZero
+    
+    /// Defines a way how `anchorCell` is anchored
+    public var anchorMode: AnchorMode = .origin
+    
+    /// Cell which is anchored to `anchorPoint`.
+    public var anchorCell: Cell = Cell()
     
 // MARK: Methods
     
@@ -43,4 +51,46 @@ public struct Grid4 {
         spaceY = space
     }
     
+    /// Calculates rect for given cell.
+    public func rectForCell(cell: Cell) -> CGRect {
+        let size = CGSize(width: width, height: height)
+        let originX = anchorPoint.x + anchorSpaceX + (cell.point.x - anchorCell.point.x) * (width + spaceX)
+        let originY = anchorPoint.y + anchorSpaceY + (cell.point.y - anchorCell.point.y) * (height + spaceY)
+        let origin = CGPoint(x: originX, y: originY)
+        return CGRect(origin: origin, size: size)
+    }
+    
+}
+
+
+private extension Grid4 {
+    var anchorSpaceX: CGFloat {
+        switch anchorMode {
+        case .center: return -0.5 * width
+        case .origin: return 0.0
+        case .originWithSpace: return -0.5 * spaceX
+        }
+    }
+    
+    var anchorSpaceY: CGFloat {
+        switch anchorMode {
+        case .center: return -0.5 * height
+        case .origin: return 0.0
+        case .originWithSpace: return -0.5 * spaceY
+        }
+    }
+}
+
+
+extension Grid4 {
+    public enum AnchorMode {
+        /// Anchor cell is anchored to its center.
+        case center
+        
+        /// Anchor cell is anchored to its origin.
+        case origin
+        
+        /// The same as `origin` but also with respect to `spaceX` and `spaceY`
+        case originWithSpace
+    }
 }
