@@ -77,5 +77,10 @@ class Grid4Tests: XCTestCase {
         XCTAssertEqualWithAccuracy(rect.origin.x, -1.0, accuracy: 0.5)
         XCTAssertEqualWithAccuracy(rect.origin.y, -5.0, accuracy: 0.5)
     }
-    
+
+    func testCellForPoint() {
+        var grid = testGrid
+        let cell = grid.cellForPoint(CGPoint(x: 12.0, y: 12.0))
+        XCTAssertEqual(cell, Cell(x: 0, y: 0))
+    }
 }

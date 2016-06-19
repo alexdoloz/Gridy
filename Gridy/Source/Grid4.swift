@@ -60,6 +60,11 @@ public struct Grid4 {
         return CGRect(origin: origin, size: size)
     }
     
+    /// Calculates cell for given point. If point belongs to space between cells, it returns nil
+    public func cellForPoint(point: CGPoint) -> Cell? {
+        return nil
+    }
+    
 }
 
 
