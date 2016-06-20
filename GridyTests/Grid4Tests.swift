@@ -79,8 +79,30 @@ class Grid4Tests: XCTestCase {
     }
 
     func testCellForPoint() {
-        var grid = testGrid
-        let cell = grid.cellForPoint(CGPoint(x: 12.0, y: 12.0))
-        XCTAssertEqual(cell, Cell(x: 0, y: 0))
+        var grid = Grid4()
+        let point1 = CGPoint(x: 0.5, y: 0.5)
+        
+        let cells1 = grid.cellsForPoint(point1)
+        XCTAssertEqual(cells1.count, 1)
+        XCTAssertTrue(cells1.contains(Cell(x: 0, y: 0)))
+        
+        let point2 = CGPoint(x: 1.0, y: 0.5)
+        let cells2 = grid.cellsForPoint(point2)
+        XCTAssertEqual(cells2.count, 2)
+        XCTAssertTrue(cells1.contains(Cell(x: 0, y: 0)))
+        XCTAssertTrue(cells1.contains(Cell(x: 1, y: 0)))
+        
+        let point3 = CGPoint(x: 1.0, y: 1.0)
+        let cells3 = grid.cellsForPoint(point3)
+        XCTAssertEqual(cells3.count, 4)
+        XCTAssertTrue(cells1.contains(Cell(x: 0, y: 0)))
+        XCTAssertTrue(cells1.contains(Cell(x: 1, y: 0)))
+        XCTAssertTrue(cells1.contains(Cell(x: 0, y: 1)))
+        XCTAssertTrue(cells1.contains(Cell(x: 1, y: 1)))
+        
+        grid.setSpace(10.0)
+        let point4 = CGPoint(x: 2.0, y: 2.0)
+        let cells4 = grid.cellsForPoint(point4)
+        XCTAssertEqual(cells4.count, 0)
     }
 }
