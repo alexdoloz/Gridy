@@ -97,10 +97,23 @@ public struct Grid4 {
         return result
     }
     
+    // MARK: Subscripts
+    public subscript(x: Int, y: Int) -> CGRect {
+        get {
+            return rectForCell(Cell(x: x, y: y))
+        }
+    }
+    
+    public subscript(point: CGPoint) -> [Cell] {
+        get {
+            return cellsForPoint(point)
+        }
+    }
 }
 
 
 private extension Grid4 {
+    /// Horizontal space from center of the `anchorCell` to the `anchorPoint`.
     var anchorSpaceX: CGFloat {
         switch anchorMode {
         case .center: return -0.5 * width
@@ -109,6 +122,7 @@ private extension Grid4 {
         }
     }
     
+    /// Vertical space from center of the `anchorCell` to the `anchorPoint`.
     var anchorSpaceY: CGFloat {
         switch anchorMode {
         case .center: return -0.5 * height
@@ -119,7 +133,7 @@ private extension Grid4 {
 }
 
 
-extension Grid4 {
+public extension Grid4 {
     public enum AnchorMode {
         /// Anchor cell is anchored to its center.
         case center
@@ -134,7 +148,6 @@ extension Grid4 {
 
 
 private extension IntervalType where Bound == CGFloat {
-    
     /// Returns int values, containing in this closed `CGFloat` interval. If there are no such values, it returns `nil`.
     var intValues: Range<Int>? {
         let startValue = Int(ceil(self.start))

@@ -105,4 +105,20 @@ class Grid4Tests: XCTestCase {
         let cells4 = grid.cellsForPoint(point4)
         XCTAssertEqual(cells4.count, 0)
     }
+    
+    func testSubscript1() {
+        let grid = Grid4()
+        let rect = grid[1, 3]
+        XCTAssertEqual(rect, CGRect(x: 1.0, y: 3.0, width: 1.0, height: 1.0))
+    }
+    
+    func testSubscript2() {
+        let grid = Grid4()
+        let point1 = CGPoint(x: 0.5, y: 0.2)
+        let point2 = CGPoint(x: 1.0, y: 2.0)
+        let point3 = CGPoint(x: 1.0, y: 0.5)
+        XCTAssertEqual(grid[point1].count, 1)
+        XCTAssertEqual(grid[point2].count, 4)
+        XCTAssertEqual(grid[point3].count, 2)
+    }
 }
