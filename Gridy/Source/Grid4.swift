@@ -10,22 +10,30 @@ public struct Grid4 {
     /// Width of the cell; must be >= 0; default is 1.0
     public var width: CGFloat = 1.0 {
         didSet {
-            precondition(width >= 0)
+            precondition(width > 0, "width must be > 0")
         }
     }
     
     /// Height of the cell; must be >= 0; default is 1.0
     public var height: CGFloat = 1.0 {
         didSet {
-            precondition(height >= 0)
+            precondition(height > 0, "height must be > 0")
         }
     }
     
     /// Horizontal space between cells. By default there is no space (0.0).
-    public var spaceX: CGFloat = 0.0
+    public var spaceX: CGFloat = 0.0 {
+        didSet {
+            precondition(spaceX >= 0.0, "spaceX must be >= 0")
+        }
+    }
     
     /// Vertical space between cells. By default there is no space (0.0).
-    public var spaceY: CGFloat = 0.0
+    public var spaceY: CGFloat = 0.0 {
+        didSet {
+            precondition(spaceY >= 0.0, "spaceY must be >= 0")
+        }
+    }
     
     /// Point to which `anchorCell` is anchored. See also `anchorMode`.
     public var anchorPoint: CGPoint = CGPointZero
@@ -60,9 +68,33 @@ public struct Grid4 {
         return CGRect(origin: origin, size: size)
     }
     
-    /// Finds all cells that contain given point. If point belongs to space between cells, it returns empty array
+    /// Finds all cells that contain given point. If point belongs to space between cells, it returns empty array.
     public func cellsForPoint(point: CGPoint) -> [Cell] {
-        return []
+        let cx = width + spaceX
+        let dx1 = anchorPoint.x + anchorSpaceX - cx * anchorCell.point.x
+        let dx2 = dx1 + width
+        
+        let cy = height + spaceY
+        let dy1 = anchorPoint.y + anchorSpaceY - cy * anchorCell.point.y
+        let dy2 = dy1 + height
+        
+        let intervalForCellX = ((point.x - dx2) / cx) ... ((point.x - dx1) / cx)
+        let intervalForCellY = ((point.y - dy2) / cy) ... ((point.y - dy1) / cy)
+        
+        guard let integerValuesX = intervalForCellX.intValues,
+            let integerValuesY = intervalForCellY.intValues else {
+            return []
+        }
+        
+        var result: [Cell] = []
+        for x in integerValuesX {
+            for y in integerValuesY {
+                let cell = Cell(x: x, y: y)
+                result.append(cell)
+            }
+        }
+        
+        return result
     }
     
 }
@@ -97,5 +129,19 @@ extension Grid4 {
         
         /// The same as `origin` but also with respect to `spaceX` and `spaceY`
         case originWithSpace
+    }
+}
+
+
+private extension IntervalType where Bound == CGFloat {
+    
+    /// Returns int values, containing in this closed `CGFloat` interval. If there are no such values, it returns `nil`.
+    var intValues: Range<Int>? {
+        let startValue = Int(ceil(self.start))
+        let endValue = Int(floor(self.end))
+        if startValue > endValue {
+            return nil
+        }
+        return startValue...endValue
     }
 }
