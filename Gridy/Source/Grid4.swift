@@ -134,7 +134,7 @@ private extension Grid4 {
 
 
 public extension Grid4 {
-    public enum AnchorMode {
+    public enum AnchorMode: Int {
         /// Anchor cell is anchored to its center.
         case center
         

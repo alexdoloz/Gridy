@@ -20,7 +20,11 @@ extension Cell: CustomStringConvertible {
 }
 
 
-extension Cell: Equatable {}
+extension Cell: Hashable {
+    public var hashValue: Int {
+        return x ^ y
+    }
+}
 
 
 // MARK: Operators
@@ -28,3 +32,5 @@ extension Cell: Equatable {}
 public func == (lhs: Cell, rhs: Cell) -> Bool {
     return lhs.x == rhs.x && lhs.y == rhs.y
 }
+
+
