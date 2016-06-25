@@ -18,6 +18,11 @@ class ExampleViewController: UIViewController {
     
     @IBOutlet weak var anchorCellYLabel: UILabel!
     
+    @IBOutlet weak var hideShowButton: UIButton!
+    
+    @IBOutlet weak var menuView: UIVisualEffectView!
+    
+    
     @IBOutlet weak var containerView: UIView!
     
     var cellViews: [Cell: UIView] = [:]
@@ -43,6 +48,10 @@ class ExampleViewController: UIViewController {
     @IBOutlet weak var anchorCellYStepper: UIStepper!
     
     @IBOutlet weak var anchorModeSegmentedControl: UISegmentedControl!
+    
+    
+    @IBOutlet weak var menuConstraint: NSLayoutConstraint!
+    
     
     
     override func viewDidLoad() {
@@ -111,5 +120,22 @@ class ExampleViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func hideShowPressed(sender: AnyObject) {
+        let wasHidden = menuView.frame.maxY > view.bounds.maxY
+        let hidden = !wasHidden
+        let newTitle = hidden ? "Show" : "Hide"
+        let newConstant = hidden ? -(menuView.frame.height - 40) : 0.0
+        menuConstraint.constant = newConstant
+        UIView.performWithoutAnimation {
+            self.hideShowButton.setTitle(newTitle, forState: .Normal)
+        }
+        
+        UIView.animateWithDuration(0.25) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
 }
 

@@ -129,16 +129,19 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-8i-2CP">
-                                            <rect key="frame" x="560" y="8" width="32" height="30"/>
-                                            <state key="normal" title="Hide"/>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="anchorPoint:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1z-VJ-fDi">
                                             <rect key="frame" x="346" y="60" width="97" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-8i-2CP">
+                                            <rect key="frame" x="560" y="8" width="32" height="30"/>
+                                            <state key="normal" title="Hide"/>
+                                            <connections>
+                                                <action selector="hideShowPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6r-KJ-gHg"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="GxL-Xs-cHw" firstAttribute="top" secondItem="T1z-VJ-fDi" secondAttribute="bottom" constant="9" id="0mv-cQ-pkf"/>
@@ -227,6 +230,9 @@
                         <outlet property="containerView" destination="s6T-eq-pcO" id="glx-EM-nyg"/>
                         <outlet property="heightLabel" destination="laV-LS-hdi" id="a6d-ok-DmI"/>
                         <outlet property="heightSlider" destination="2cm-uV-8Nf" id="qGB-ze-yPx"/>
+                        <outlet property="hideShowButton" destination="BiK-8i-2CP" id="ZOO-Ef-RH3"/>
+                        <outlet property="menuConstraint" destination="zXR-zO-nOO" id="tPQ-PL-ix5"/>
+                        <outlet property="menuView" destination="KUz-wW-dTh" id="9lt-LT-VwX"/>
                         <outlet property="spaceXLabel" destination="CUo-dT-QLc" id="saq-9w-eXu"/>
                         <outlet property="spaceXSlider" destination="fFK-4r-u5j" id="cSS-NA-1dG"/>
                         <outlet property="spaceYLabel" destination="H5i-TQ-1xn" id="z8f-c1-t9w"/>
