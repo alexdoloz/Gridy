@@ -10,7 +10,6 @@
 		1135AD881D1FCFFE006B91A9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135AD871D1FCFFE006B91A9 /* ExampleViewController.swift */; };
 		1135AD9A1D201B27006B91A9 /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135AD971D201B27006B91A9 /* CellTests.swift */; };
 		1135AD9B1D201B27006B91A9 /* Grid4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135AD981D201B27006B91A9 /* Grid4Tests.swift */; };
-		1135AD9C1D201B27006B91A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1135AD991D201B27006B91A9 /* Info.plist */; };
 		5ADA06A7DCA2A03C39F7E3E3 /* Pods_Gridy_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA93A9A1F13A01D92EE5805F /* Pods_Gridy_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -206,7 +205,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					1135AD8C1D201B0A006B91A9 = {
@@ -242,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1135AD9C1D201B27006B91A9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +524,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -539,6 +538,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
