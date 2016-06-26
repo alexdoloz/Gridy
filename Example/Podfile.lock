@@ -1,0 +1,16 @@
+PODS:
+  - Gridy (0.1.0)
+
+DEPENDENCIES:
+  - Gridy (from `../`)
+
+EXTERNAL SOURCES:
+  Gridy:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Gridy: fa80ab0aa9879d7e441da3de16a1e5a4c0bb336b
+
+PODFILE CHECKSUM: a71d04621305bd15b4b73304b18c6aaeabd712f5
+
+COCOAPODS: 1.0.1

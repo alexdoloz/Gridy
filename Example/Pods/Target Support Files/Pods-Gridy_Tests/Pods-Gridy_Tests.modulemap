@@ -1,0 +1,6 @@
+framework module Pods_Gridy_Tests {
+  umbrella header "Pods-Gridy_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

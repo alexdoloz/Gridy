@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Gridy_Example' do
+  pod 'Gridy', :path => '../'
+
+  target 'Gridy_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
