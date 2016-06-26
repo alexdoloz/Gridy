@@ -8,27 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		1135AD881D1FCFFE006B91A9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135AD871D1FCFFE006B91A9 /* ExampleViewController.swift */; };
+		1135AD9A1D201B27006B91A9 /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135AD971D201B27006B91A9 /* CellTests.swift */; };
+		1135AD9B1D201B27006B91A9 /* Grid4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135AD981D201B27006B91A9 /* Grid4Tests.swift */; };
+		1135AD9C1D201B27006B91A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1135AD991D201B27006B91A9 /* Info.plist */; };
 		5ADA06A7DCA2A03C39F7E3E3 /* Pods_Gridy_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA93A9A1F13A01D92EE5805F /* Pods_Gridy_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		82ACD54540DD579C5BE06E08 /* Pods_Gridy_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D218678B69A9E57B8C8198E6 /* Pods_Gridy_Tests.framework */; };
+		60BC90E0C5CA608B7E69833D /* Pods_Gridy_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D218678B69A9E57B8C8198E6 /* Pods_Gridy_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+		1135AD921D201B0A006B91A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = Gridy;
+			remoteInfo = Gridy_Example;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1135AD871D1FCFFE006B91A9 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		1135AD8D1D201B0A006B91A9 /* Gridy_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gridy_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1135AD971D201B27006B91A9 /* CellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTests.swift; sourceTree = "<group>"; };
+		1135AD981D201B27006B91A9 /* Grid4Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid4Tests.swift; sourceTree = "<group>"; };
+		1135AD991D201B27006B91A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		249FEB650AD49C575AEAFC7A /* Pods-Gridy_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gridy_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gridy_Tests/Pods-Gridy_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55DE53C3300F07E476C30C22 /* Pods-Gridy_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gridy_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gridy_Example/Pods-Gridy_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Gridy_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gridy_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,9 +43,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Gridy_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gridy_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B134365B9A6CC33EEE73DF8F /* Pods-Gridy_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gridy_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gridy_Example/Pods-Gridy_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C3C7425C691949707B8D2F9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C9888EC51AC44723DB471911 /* Pods-Gridy_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gridy_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gridy_Tests/Pods-Gridy_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +53,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1135AD8A1D201B0A006B91A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BC90E0C5CA608B7E69833D /* Pods_Gridy_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,23 +69,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82ACD54540DD579C5BE06E08 /* Pods_Gridy_Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1135AD8E1D201B0A006B91A9 /* Gridy_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1135AD971D201B27006B91A9 /* CellTests.swift */,
+				1135AD981D201B27006B91A9 /* Grid4Tests.swift */,
+				1135AD991D201B27006B91A9 /* Info.plist */,
+			);
+			path = Gridy_Tests;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Gridy */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				1135AD8E1D201B0A006B91A9 /* Gridy_Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				C48EC35E43F3323D68BF3F99 /* Pods */,
 				84FEB2A44ECBCD0A4875AD6C /* Frameworks */,
@@ -85,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* Gridy_Example.app */,
-				607FACE51AFB9204008FA782 /* Gridy_Tests.xctest */,
+				1135AD8D1D201B0A006B91A9 /* Gridy_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,23 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +158,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1135AD8C1D201B0A006B91A9 /* Gridy_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1135AD941D201B0A006B91A9 /* Build configuration list for PBXNativeTarget "Gridy_Tests" */;
+			buildPhases = (
+				88337260216BF14455C87AB9 /* [CP] Check Pods Manifest.lock */,
+				1135AD891D201B0A006B91A9 /* Sources */,
+				1135AD8A1D201B0A006B91A9 /* Frameworks */,
+				1135AD8B1D201B0A006B91A9 /* Resources */,
+				DA96987772CBB0ABCEACF889 /* [CP] Embed Pods Frameworks */,
+				9D2B2618D0C704300896BA73 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1135AD931D201B0A006B91A9 /* PBXTargetDependency */,
+			);
+			name = Gridy_Tests;
+			productName = Gridy_Tests;
+			productReference = 1135AD8D1D201B0A006B91A9 /* Gridy_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		607FACCF1AFB9204008FA782 /* Gridy_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Gridy_Example" */;
@@ -182,43 +199,22 @@
 			productReference = 607FACD01AFB9204008FA782 /* Gridy_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* Gridy_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Gridy_Tests" */;
-			buildPhases = (
-				AA6680BFE339A938148D37EE /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				FD779DFCCCB4A62B801B8BD8 /* [CP] Embed Pods Frameworks */,
-				B7E69CE665F09591987D6DB2 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = Gridy_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Gridy_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					1135AD8C1D201B0A006B91A9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -236,12 +232,20 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* Gridy_Example */,
-				607FACE41AFB9204008FA782 /* Gridy_Tests */,
+				1135AD8C1D201B0A006B91A9 /* Gridy_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1135AD8B1D201B0A006B91A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1135AD9C1D201B27006B91A9 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,16 +256,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		88337260216BF14455C87AB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8D5E22698925446D6A9A73BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,22 +304,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gridy_Example/Pods-Gridy_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA6680BFE339A938148D37EE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B7E69CE665F09591987D6DB2 /* [CP] Copy Pods Resources */ = {
+		9D2B2618D0C704300896BA73 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,6 +317,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gridy_Tests/Pods-Gridy_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA96987772CBB0ABCEACF889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gridy_Tests/Pods-Gridy_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE8F1647FA5FAA98E66AB3EE /* [CP] Embed Pods Frameworks */ = {
@@ -337,24 +349,18 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gridy_Example/Pods-Gridy_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD779DFCCCB4A62B801B8BD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gridy_Tests/Pods-Gridy_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1135AD891D201B0A006B91A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1135AD9B1D201B27006B91A9 /* Grid4Tests.swift in Sources */,
+				1135AD9A1D201B27006B91A9 /* CellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,21 +370,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+		1135AD931D201B0A006B91A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* Gridy_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+			targetProxy = 1135AD921D201B0A006B91A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -402,6 +400,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1135AD951D201B0A006B91A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249FEB650AD49C575AEAFC7A /* Pods-Gridy_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = Gridy_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.doloz.Gridy-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gridy_Example.app/Gridy_Example";
+			};
+			name = Debug;
+		};
+		1135AD961D201B0A006B91A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9888EC51AC44723DB471911 /* Pods-Gridy_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Gridy_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.doloz.Gridy-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gridy_Example.app/Gridy_Example";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,43 +542,18 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 249FEB650AD49C575AEAFC7A /* Pods-Gridy_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9888EC51AC44723DB471911 /* Pods-Gridy_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1135AD941D201B0A006B91A9 /* Build configuration list for PBXNativeTarget "Gridy_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1135AD951D201B0A006B91A9 /* Debug */,
+				1135AD961D201B0A006B91A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Gridy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -561,15 +568,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Gridy_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,12 +4,19 @@ import CoreGraphics
 
 /** Defines 2d cell with `Int` coordinates.*/
 public struct Cell {
-    var x = 0
-    var y = 0
+    public var x = 0
+    public var y = 0
     
-    var point: CGPoint {
+    public var point: CGPoint {
         return CGPoint(x: x, y: y)
     }
+    
+    public init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
+    
+    public init() {}
 }
 
 

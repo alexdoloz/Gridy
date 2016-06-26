@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ssh-9J-Njg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--Example View Controller-->
         <scene sceneID="x2S-4a-GuT">
             <objects>
-                <viewController id="Ssh-9J-Njg" customClass="ExampleViewController" customModule="Gridy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ssh-9J-Njg" customClass="ExampleViewController" customModule="Gridy_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PVS-09-5X9"/>
                         <viewControllerLayoutGuide type="bottom" id="mlT-I7-FHz"/>

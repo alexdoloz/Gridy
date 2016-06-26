@@ -4,6 +4,7 @@ import CoreGraphics
 
 /** Defines infinite rectangle grid, consisting of cells which have integer coordinates. First you assign parameters to it (`width`, `space`, etc.), then you use various methods (i.e. `rectForCell(_:)`) which perform all the necessary math.*/
 public struct Grid4 {
+    public init() {}
     
 // MARK: Properties
     
